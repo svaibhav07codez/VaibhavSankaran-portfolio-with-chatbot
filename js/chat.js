@@ -44,10 +44,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 })
             });
 
+            // Check for non-JSON response (e.g., 404 HTML from GitHub Pages)
+            const contentType = response.headers.get("content-type");
+            if (!contentType || !contentType.includes("application/json")) {
+                throw new Error(`Backend not found or returned non-JSON. Are you on the Vercel URL? Status: ${response.status}`);
+            }
+
             const data = await response.json();
             showTyping(false);
 
-            if (data.reply) {
+            if (response.ok && data.reply) {
                 addMessage(data.reply, 'bot');
                 // Update history for context-aware conversation
                 chatHistory.push({ role: 'user', parts: [{ text: text }] });
@@ -56,12 +62,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Keep history manageable (last 10 exchanges)
                 if (chatHistory.length > 20) chatHistory = chatHistory.slice(-20);
             } else {
-                addMessage("Sorry, I encountered an error. Please try again.", 'bot');
+                const errorMessage = data.error || "Unknown error occurred";
+                addMessage(`Error: ${errorMessage}. (Status: ${response.status})`, 'bot');
             }
         } catch (error) {
             console.error('Error:', error);
             showTyping(false);
-            addMessage("Network error. Please check your connection.", 'bot');
+            addMessage(`System Error: ${error.message}`, 'bot');
         }
     }
 
