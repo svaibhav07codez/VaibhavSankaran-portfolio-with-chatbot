@@ -1,0 +1,9 @@
+{
+    "name": "portfolio-chatbot",
+    "version": "1.0.0",
+    "description": "Portfolio with AI Chatbot",
+    "type": "module",
+    "engines": {
+        "node": ">=18"
+    }
+}
