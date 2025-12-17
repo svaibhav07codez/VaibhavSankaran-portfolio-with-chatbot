@@ -62,13 +62,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Keep history manageable (last 10 exchanges)
                 if (chatHistory.length > 20) chatHistory = chatHistory.slice(-20);
             } else {
-                const errorMessage = data.error || "Unknown error occurred";
-                addMessage(`Error: ${errorMessage}. (Status: ${response.status})`, 'bot');
+                console.error("API Error details:", data.error || response.statusText);
+                // Graceful failure for user
+                addMessage("I'm currently experiencing high traffic. Please reach out to Vaibhav directly at vaibhavsankaran24@gmail.com or +1 (857) 339-8151.", 'bot');
             }
         } catch (error) {
             console.error('Error:', error);
             showTyping(false);
-            addMessage(`System Error: ${error.message}`, 'bot');
+            addMessage("I'm having trouble connecting right now. Please contact Vaibhav at vaibhavsankaran24@gmail.com or +1 (857) 339-8151.", 'bot');
         }
     }
 
