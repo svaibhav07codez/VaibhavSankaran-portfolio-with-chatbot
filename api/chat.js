@@ -17,7 +17,7 @@ export default async function handler(req, res) {
     }
 
     try {
-        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`, {
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${apiKey}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -58,6 +58,6 @@ export default async function handler(req, res) {
         res.status(200).json({ reply });
     } catch (error) {
         console.error('Chat Error:', error);
-        res.status(500).json({ error: 'Failed to fetch response from AI' });
+        res.status(500).json({ error: error.message || 'Failed to fetch response from AI' });
     }
 }
