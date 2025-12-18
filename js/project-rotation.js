@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setInterval(() => {
                 currentIndex = (currentIndex + 1) % images.length;
                 element.style.backgroundImage = `url('${images[currentIndex]}')`;
-            }, 5000); // Change every 5 seconds
+            }, 2000); // Change every 5 seconds
         }
     });
 });
