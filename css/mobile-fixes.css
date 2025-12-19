@@ -1,0 +1,150 @@
+/* Mobile Responsiveness Fixes */
+
+@media (max-width: 991.98px) {
+    /* =========================================
+       1. Home Slider / Hero Section Fixes
+       ========================================= */
+
+    /* Allow the slider item container to grow with content instead of fixed height */
+    .owl-carousel.home-slider .slider-item {
+        height: auto !important;
+        min-height: 100vh;
+        padding-top: 120px !important;
+        /* Space for navbar */
+        padding-bottom: 50px !important;
+        background-position: center top !important;
+    }
+
+    /* Reset slider text height */
+    .owl-carousel.home-slider .slider-item .slider-text {
+        height: auto !important;
+        text-align: center;
+    }
+
+    /* Stack the content: Image first, then Text */
+    .row.slider-text {
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    /* Image Container Styling */
+    .image-container {
+        width: 100% !important;
+        text-align: center !important;
+        margin-bottom: 20px !important;
+        order: 1;
+        /* Image first */
+    }
+
+    .image-container img {
+        max-width: 70% !important;
+        /* Smaller image on mobile */
+        height: auto !important;
+        margin: 0 auto !important;
+    }
+
+    /* Text Container Styling */
+    .owl-carousel.home-slider .slider-item .slider-text .one-forth {
+        position: relative !important;
+        /* Stop absolute positioning overlap */
+        width: 100% !important;
+        height: auto !important;
+        padding: 0 15px !important;
+        text-align: center !important;
+        order: 2;
+        /* Text second */
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+    }
+
+    .owl-carousel.home-slider .slider-item .slider-text .one-forth .text {
+        position: relative !important;
+        transform: none !important;
+        top: auto !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Typography adjustments for mobile */
+    .slider-text h1 {
+        font-size: 32px !important;
+        margin-top: 10px !important;
+    }
+
+    .slider-text h2 {
+        font-size: 18px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .slider-text .subheading {
+        font-size: 14px !important;
+        margin-bottom: 10px !important;
+        display: inline-block;
+    }
+
+
+    /* =========================================
+       2. About Section Fixes
+       ========================================= */
+    .ftco-about .img-about {
+        margin-bottom: 30px;
+    }
+
+    .ftco-about .img-about .img {
+        height: auto;
+    }
+
+    .ftco-about .about-info {
+        margin-top: 20px;
+    }
+
+    .about-img img {
+        margin: 0 auto;
+        display: block;
+        max-width: 250px;
+        /* Limit profile image size */
+    }
+
+
+    /* =========================================
+       3. Projects Section Fixes
+       ========================================= */
+    .blog-entry {
+        margin-bottom: 40px !important;
+        /* Add space between stacked projects */
+    }
+
+    /* Ensure project images fit within screen */
+    .block-20 {
+        height: 250px !important;
+        /* Reduce height on mobile */
+    }
+
+
+    /* =========================================
+       4. Navbar Fixes
+       ========================================= */
+    .ftco-navbar-light {
+        background: #000000 !important;
+        /* Solid background for navbar on mobile */
+    }
+
+    .navbar-collapse {
+        background: #000000;
+        padding: 10px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+    .slider-text h1 {
+        font-size: 28px !important;
+    }
+
+    #typing-animation {
+        font-size: 20px !important;
+    }
+}
