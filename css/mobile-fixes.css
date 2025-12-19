@@ -39,8 +39,8 @@
     }
 
     .image-container img {
-        max-width: 50% !important;
-        /* Reduced from 70% to save vertical space */
+        max-width: 60% !important;
+        /* Increased from 50% based on feedback */
         /* Smaller image on mobile */
         height: auto !important;
         margin: 0 auto !important;
@@ -73,13 +73,14 @@
 
     /* Typography adjustments for mobile */
     .slider-text h1 {
-        font-size: 28px !important;
+        font-size: 24px !important;
+        /* Reduced from 28px to prevent overflow */
         margin-top: 5px !important;
     }
 
     .slider-text h2 {
-        font-size: 16px !important;
-        margin-bottom: 15px !important;
+        font-size: 15px !important;
+        margin-bottom: 10px !important;
     }
 
     .slider-text .subheading {
@@ -148,6 +149,16 @@
     }
 
     #typing-animation {
-        font-size: 20px !important;
+        font-size: 18px !important;
+        white-space: normal !important;
+        /* key fix: allow wrapping if needed */
+        animation: none !important;
+        /* key fix: disable CSS animation that conflicts with JS */
+        width: auto !important;
+    }
+
+    #typing-animation:before {
+        display: none !important;
+        /* hide the CSS cursor since we prioritize content visibility */
     }
 }
