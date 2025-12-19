@@ -24,7 +24,7 @@ FORMATTING INSTRUCTIONS:
 - GitHub: https://github.com/svaibhav07codez
 
 ### PROFESSIONAL SUMMARY
-Software Engineer with 3 years of experience in full-stack application development, cloud computing, and distributed systems. Proficient in Java, Python, 
+Software Engineer with 2+ years of experience in full-stack application development, cloud computing, and distributed systems. Proficient in Java, Python, 
 REST APIs, and relational/NoSQL databases, with expertise in scalable applications using Spring Boot, React, and Node.js. Skilled in test-driven 
 development (JUnit), microservices, and multi-cloud deployment (AWS, Azure, GCP, Kubernetes, Docker). Former SDE II at Verizon, leading Agile 
 projects on performance, DevOps, and scalability.
