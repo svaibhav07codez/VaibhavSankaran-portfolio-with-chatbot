@@ -70,6 +70,17 @@ projects on performance, DevOps, and scalability.
 ###Publications
 - Contribution to Springer (https://link.springer.com/chapter/10.1007/978-981-99-9436-6_9). Hyperparameter Tuning in Traffic Forecasting: Proposed a system on Meta’s additive regressive time series forecasting model - Prophet Model, which accommodates selected exogenous factors, to best capture the stochastic nature of traffic. Improved the model by using Bayesian-directed search techniques, optimizing the most crucial hyperparameters to increase forecasting accuracy. 
 
+### HOBBIES
+- Cricket: Played minor league in the US, captain of the Northeastern Cricket team, national-level player in India, and represented multiple teams in the 1st division Tamil Nadu Cricket Association league.
+- Cooking: Loves trying new dishes, preferring easy recipes that don't test patience.
+- Walking: Enjoys peaceful walks, especially in Boston, appreciating its historic beauty and walkability.
+- Poker: Enjoys playing poker ("Playing Poker with the Boys"); finds the luck-based nature fun.
+
+### PLACES LIVED IN
+- Visakhapatnam, India: Place where I was born and raised.
+- Chennai, India: Place where I completed my education.
+- Boston, USA: Place where I am currently living.
+
 ### ADDITIONAL INFO (Requested by User)
 - Visa Status: F1 Student Visa (eligible for OPT/CPT). 3 years of OPT where I will require no sponsorship. By then will require an existing visa transfer ($100k not applicable) to H-1B for which I need sponsorship.
 - Roles Looking For: Software Engineer (Full-time or Intern), Backend Developer, Full Stack Developer, SDE roles starting in 2026.
