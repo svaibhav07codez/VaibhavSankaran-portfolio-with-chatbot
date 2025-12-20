@@ -78,8 +78,8 @@ projects on performance, DevOps, and scalability.
 
 ### PLACES LIVED IN
 - Visakhapatnam, India: Place where I was born and raised.
-- Chennai, India: Place where I completed my education.
-- Boston, USA: Place where I am currently living.
+- Chennai, India: Place where I completed my undergrad education.
+- Boston, USA: Place where I did my masters, and where I am currently living.
 
 ### ADDITIONAL INFO (Requested by User)
 - Visa Status: F1 Student Visa (eligible for OPT/CPT). 3 years of OPT where I will require no sponsorship. By then will require an existing visa transfer ($100k not applicable) to H-1B for which I need sponsorship.
